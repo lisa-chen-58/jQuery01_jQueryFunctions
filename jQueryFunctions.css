@@ -1,0 +1,33 @@
+#head{
+    background-color: lightgray;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 970px;
+}
+body{
+    font-family: sans-serif;
+    width: 970px;
+    border-style: solid;
+    border-width: medium;
+}
+.flexSections{
+    display:flex;
+    align-items: center;
+}
+button{
+    padding: 0px 5px 0px 5px;
+    margin: 0px 50px 0px 5px;
+    width: 100px;
+    height: 20px;
+    box-shadow: 5px 4px black;
+}
+#footer{
+    background-color: lightgray;
+    text-align: right;
+    width: 970px;
+
+}
+.redClass{
+    color: red;
+}

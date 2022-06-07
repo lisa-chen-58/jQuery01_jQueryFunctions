@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My jQuery basic assignment!</title>
+        <link rel="stylesheet" href="jQueryFunctions.css">
+        <script defer src="jQueryFunctions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                // function for addClass (css)
+                $('#buttonAddClass').click(function(){
+                    $('#textAddClass').addClass('redClass')
+                })
+                
+                // function for hide
+                $('#clickToHide').click(function(){
+                    $('#clickToHide').hide();
+                })
+
+                // function for slide toggle
+                $('#buttonSlideToggle').click(function(){
+                    $('#textSlideToggle').slideToggle();
+                })
+                
+                // function for append
+                $('#buttonToAppend').click(function(){
+                    $('#textToAppend').append("<p>Hello</p>");
+                })
+            })
+        </script>
+    </head>
+    <body>
+
+        <!-- THIS IS THE HEADER -->
+        <div id="head">
+            <p>This</p>
+            <p>is</p>
+            <p>a</p>
+            <p>header</p>
+            <p>http link</p>
+            <p>magnifying glass</p>
+        </div>
+
+        <!-- ADDCLASS -->
+        <h1>AddClass</h1>
+        <div class='flexSections'>
+            <button id="buttonAddClass">AddClass</button>
+            <p id="textAddClass">Click the button to add class 'red' to this paragraph</p>
+        </div>
+        <p id='clickToHide'>Not supposed to be here!!! Click to hide me!</p>
+
+        <!-- THIS IS 2. SLIDETOGGLE -->
+        <h1>Slidetoggle</h1>
+        <div class='flexSections'>
+            <button id="buttonSlideToggle">Slidetoggle</button>
+            <p id="textSlideToggle">Click the button to slide toggle a hidden image</p>        
+        </div>
+
+        <!-- THIS IS 3.APPEND -->
+        <h1>Append</h1>
+        <div class='flexSections'>
+            <button id="buttonToAppend">Append</button>
+            <p id="textToAppend">Click the button to append a new paragraph!</p>
+        </div>
+
+        <!-- THIS IS THE FOOTER -->
+        <p id='footer'>weird icons</p>
+    </body>
+</html>
